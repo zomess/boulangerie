@@ -1,0 +1,445 @@
+/* MISE EN PAGE COMPLETE */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+
+.topbar{
+    background-color: #47C679;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+
+.topbar-phone, 
+.topbar-ad {
+    margin-right: 25px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    
+}
+
+.header{
+    background-color: #3C4640;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo img{
+    width: auto;
+    height: 80px;   
+}
+
+.headerMenu ul{
+    list-style: none;
+    display: flex;
+}
+
+.headerMenu a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 25px;
+}
+
+.headerMenu a:hover{
+    color: #47C679;
+    height: auto;
+    align-items: center;
+}
+
+.current-menu-item a{
+    color: #47C679;
+    font-weight: bold;
+}
+
+/* LE CONTENU GENERAL */
+
+.main-container {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.col-2 {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.boulangerie-main-content {
+    width: 70%;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px #d0d0d0a3; 
+    padding: 30px 40px;
+    
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+/* PAGE D'ACCUEIL */
+
+.boulangerie-content {
+    width: 1200px;
+    box-shadow: 0 0 5px #c9c9c9;
+    padding: 10px 0;
+}
+
+.site-title {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.boulangerie-post-content{
+    text-align: justify;
+    padding: 25px 75px;
+}
+
+/* PAGE ARTICLES */
+
+.post-title {
+    background-color: #f2f2f2;
+    color: #383737;
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 15px;
+    box-shadow: 0 0 5px #c9c9c9;
+
+}
+
+.post-category {
+    text-decoration: none;
+    text-align: center;
+}
+
+.post-categories a{
+    color: #47C679;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.post-category ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.boulangerie-post-img {
+    text-align: center;
+    overflow: hidden;
+}  
+
+.boulangerie-post-img img{
+    width: 100%;
+    height: auto;
+}
+
+/* PAGE BLOG */
+
+.blog-title {
+    color: #47C679;
+}
+
+
+.boulangerie-post-medium {
+    display:flex;
+    justify-content: center;
+}
+
+.boulangerie-post-excerpt {
+    color: #222;
+    font-size: 15px;
+    text-align: justify;
+    padding: 15px;
+}
+
+.boulangerie-voir-plus {
+    background-color: #3C4640;
+    border-radius: 15px;
+    padding: 6px 13px;
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;    
+}
+
+.boulangerie-voir-plus:hover{
+    background-color: #47C679;
+    transition: 0.4s;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3em;
+}
+
+.posts{
+    padding: 15px;
+    border: 1px solid #e5ebe8;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #c9c9c9;
+    display: flex;
+    flex-direction: column;
+}
+
+.posts .boulangerie-post-excerpt {
+    flex: 1 1 auto;
+}
+
+/* SIDEBAR */
+
+.boulangerie-sidebar {
+    width: 25%;
+    height: 80vh;
+    box-sizing: border-box;
+    padding: 25px;
+    border: 1px ;
+    box-shadow: 0 0 5px #c9c9c9;
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 50px;
+    
+}
+
+.boulangerie-sidebar ul li{
+    list-style-type: none;
+}
+
+.boulangerie-sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.boulangerie-sidebar .wp-block-columns {
+    margin-left: 30px;
+}
+
+.boulangerie-sidebar 
+.wp-block-categories,
+.wp-block-latest-posts {
+    margin-left: 30px;
+
+}
+
+.wp-block-latest-posts.wp-block-latest-posts__list{
+    margin-left: 30px;
+}
+
+.wp-block-pages-list__item__link { 
+    color: #2b312d;
+}
+
+.wp-block-pages-list__item__link:hover{
+    color: #47C679;
+}
+
+.cat-item-1 a,
+.cat-item-4 a {
+    color: #2b312d;
+}
+
+.cat-item-1 a:hover,
+.cat-item-4 a:hover{
+    color: #47C679;
+}
+
+.wp-block-latest-posts a{
+    color: #2b312d;
+}
+
+.wp-block-latest-posts a:hover{
+    color: #47C679;
+}
+
+.widget_text {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #302f2f;
+}
+
+.sidebar-logo {
+    text-align: center;
+}
+
+.sidebar-logo img{
+    width: auto;
+    height: 150px; 
+    box-sizing: border-box;
+}
+
+.sidebar-logo p{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: #302f2f;
+}
+
+
+/* FOOTER */
+
+.footer{
+    background-color: #3C4640;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 13px;
+    padding: 20px 0 20px;
+    color: #fff;
+}
+
+.bloc{
+    width: 25%;
+    margin: 0 20px;
+}
+
+.socialmedia h3,
+.society h3,
+.openning h3 {
+    font-size: 17px;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+.list-socialmedia,
+.list-society,
+.list-openning {
+    list-style-type: none;
+    
+}
+
+.list-society,
+.list-openning {
+    padding-left: 0;
+}
+
+.footerlogo {
+    text-align: center;
+}
+
+.footerlogo img{
+    width: auto;
+    height: 120px;
+}
+
+/* la colonne socialmedia */
+
+.list-socialmedia li {
+    padding: 2px 0;
+}
+
+.list-socialmedia a {
+    color: #fff;
+    text-decoration: none;
+    align-items: center;
+}
+
+.list-socialmedia a:hover {
+    color: rgb(3, 3, 3);
+}
+
+.facebook-icon,
+.twitter-icon,
+.instagram-icon {
+    font-size: 1.5em !important;
+}
+
+/* la colonne society */
+
+.contact{
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact:hover{
+    color: #47C679;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:762px){
+
+    /* MISE EN PAGE COMPLETE */
+
+    /* HEADER */
+    .topbar{
+        flex-direction: column;
+        text-align: center;    
+    }
+
+    .topbar-phone {
+        padding-bottom: 5px;
+    }
+    
+    
+    .main-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    
+    .col-2 {
+        display: block;
+    }
+
+    .boulangerie-main-content {
+        width: 100%;
+        box-sizing: border-box;
+        
+    }
+
+    .section {
+        grid-template-columns: 1fr;
+    }
+
+    .boulangerie-post-content {
+        padding: 5px;
+    }
+    .post-title {
+        font-size: 15px;
+    }
+
+    .boulangerie-sidebar {
+        width: 100%;
+        height: 100%;
+        margin-top: 20px;
+    }
+
+    .sidebar {
+        padding-left: 20px;
+    }
+
+    .sidebar-logo {
+        text-align: center;
+    }
+
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
+    .bloc {
+        width: 100%;
+        margin: 0;
+    }
+}
